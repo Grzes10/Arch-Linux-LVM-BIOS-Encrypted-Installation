@@ -31,6 +31,7 @@ mkfs.ext4 /dev/volgroup0/root
 mount /dev/volgroup0/root /mnt
 mkdir /mnt/boot
 mount /dev/sda1 /mnt/boot 
+
 ## Pacstrap kernel and basic files into the newly mounted filesystem ##
 pacstrap - i /mnt base base-devel linux linux-firmware
 
