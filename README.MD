@@ -1,3 +1,6 @@
+### This blueprint is aimed towards BIOS encrypted LVM setup using M2 drive (nvme0n1), but can be used for any install as long as its BIOS and you want an encrypted root filesystem ###
+
+
 ## Pre install setup ##
 
 $ timedatectl set-ntp true
