@@ -13,12 +13,15 @@ Deleting existing partitions using "d"
 Create MBR partition schema using "o"
 
 Create boot partition:
+
 $ n -> p -> 1 -> enter -> +500M -> t -> a
 
 Create root partition:
+
 $ n -> p -> 2 -> enter -> enter -> t -> 2 -> 8E
 
 Write changes to disk:
+
 $ w
 
 ## Format boot partition ##
