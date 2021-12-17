@@ -1,6 +1,7 @@
 ## Pre install setup ##
 
 $ timedatectl set-ntp true
+
 $ pacman -Syyy
 
 ## Partition setup using fdisk ##
