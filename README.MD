@@ -3,17 +3,23 @@
 $ timedatectl set-ntp true
 $ pacman -Syyy
 
-## Partition setup ##
+## Partition setup using fdisk ##
+
+Open drive you want to install Arch on using:
+
 $ fdisk /dev/nvme0n1
 
 Deleting existing partitions using "d"
 Create MBR partition schema using "o"
+
 Create boot partition:
-n -> p -> 1 -> enter -> +500M -> t -> a
+$ n -> p -> 1 -> enter -> +500M -> t -> a
+
 Create root partition:
-n -> p -> 2 -> enter -> enter -> t -> 2 -> 8E
-Write changes:
-w
+$ n -> p -> 2 -> enter -> enter -> t -> 2 -> 8E
+
+Write changes to disk:
+$ w
 
 ## Format boot partition ##
 $ mkfs.ext2 /dev/nvme0n1p1
